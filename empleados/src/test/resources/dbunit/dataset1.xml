@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<dataset>
+    <Despacho id="1" codigoDespacho="0001"/>
+    <Despacho id="2" codigoDespacho="0002"/>
+    <Despacho id="3" codigoDespacho="0003"/>
+    <Departamento id="1" nombre="DCCIA" campus="UA" edificio="Politecnica 2"/>
+    <Departamento id="2" nombre="DLSI" campus="UA" edificio="Politecnica 4"/>
+    <Empleado id="1" nombre="Domingo Gallardo" sueldo="2100" departamento_id="1" despacho_id="1"/>
+    <Empleado id="2" nombre="Otto Colomina" sueldo="2400" departamento_id="1" despacho_id="2"/>
+    <Empleado id="3" nombre="Francisco Moreno" sueldo="3500" departamento_id="2" despacho_id="3"/>
+    <CuentaCorreo id="1" empleado_id = "1" direccion = "domingo.gallardo@ua.es" smtpServer = "mail.ua.es" />
+    <CuentaCorreo id="2" empleado_id = "1" direccion = "domingo.gallardo@gmail.com" smtpServer = "mail.google.com" />
+    <FacturaGasto id="1" cantidad="46.23" concepto="EBook Persistence Java" fecha="2014-11-29" empleado_id="1"/>
+    <FacturaGasto id="2" cantidad="96.23" concepto="Software" fecha="2014-11-30" empleado_id="1"/>
+    <FacturaGasto id="3" cantidad="136.23" concepto="Congreso JENUI" fecha="2014-12-02" empleado_id="2"/>
+    <FacturaGasto id="4" cantidad="122.00" concepto="Congreso AIRFAI" fecha="2015-01-18" empleado_id="2"/>
+    <Proyecto id="1" nombre="Construcción automática de mapas"/>
+    <Proyecto id="2" nombre="Reconocimiento de caras"/>
+    <Proyecto id="3" nombre="Proyecto secreto DLSI"/>
+    <Empleado_Proyecto empleados_id="1" proyectos_id="1"/>
+    <Empleado_Proyecto empleados_id="2" proyectos_id="1"/>
+    <Empleado_Proyecto empleados_id="3" proyectos_id="1"/>
+    <Empleado_Proyecto empleados_id="2" proyectos_id="2"/>
+    <Empleado_Proyecto empleados_id="3" proyectos_id="2"/>
+    <Empleado_Proyecto empleados_id="3" proyectos_id="3"/>
+</dataset>

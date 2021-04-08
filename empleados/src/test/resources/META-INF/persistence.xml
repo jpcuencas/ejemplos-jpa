@@ -1,0 +1,37 @@
+<persistence version="2.1"
+             xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence">
+
+    <persistence-unit name="empleados-mysql" transaction-type="RESOURCE_LOCAL">
+
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+
+        <class>org.expertojava.jpa.empleados.modelo.CuentaCorreo</class>
+        <class>org.expertojava.jpa.empleados.modelo.Departamento</class>
+        <class>org.expertojava.jpa.empleados.modelo.Despacho</class>
+        <class>org.expertojava.jpa.empleados.modelo.Direccion</class>
+        <class>org.expertojava.jpa.empleados.modelo.Empleado</class>
+        <class>org.expertojava.jpa.empleados.modelo.FacturaGasto</class>
+        <class>org.expertojava.jpa.empleados.modelo.Proyecto</class>
+
+        <properties>
+
+            <!-- JPA properties -->
+            <property name="javax.persistence.jdbc.driver"
+                      value="com.mysql.jdbc.Driver"/>
+            <property name="javax.persistence.jdbc.url"
+                      value="jdbc:mysql://localhost:3306/jpa_empleados"/>
+            <property name="javax.persistence.jdbc.user" value="root"/>
+            <property name="javax.persistence.jdbc.password"
+                      value="expertojava"/>
+
+            <!-- Hibernate properties -->
+            <property name="hibernate.dialect"
+                      value="org.hibernate.dialect.MySQLDialect"/>
+            <property name="hibernate.show_sql" value="true"/>
+            <property name="hibernate.format_sql" value="false"/>
+            <property name="hibernate.hbm2ddl.auto" value="create"/>
+        </properties>
+    </persistence-unit>
+</persistence>

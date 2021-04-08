@@ -1,0 +1,12 @@
+# Al ser un repositorio con ejemplos, guardamos todo en formato
+# Maven, sin ningun elemento de IntelliJ
+
+*.iml
+
+## Directory-based project format:
+.idea/
+
+# ignore Maven generated target folders
+target
+
+
